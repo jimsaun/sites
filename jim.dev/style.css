@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background: #111111;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    overflow: hidden;          
+}  
+@keyframes  scale {
+    from {
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(0.9, 0.9);
+        opacity: 1;
+    }
+}
+.image img {
+    width: 256px;
+    height: 256px;
+    align-self: center;
+    border-radius: 1000px;
+    animation: scale 0.9s ease-out forwards;
+}
